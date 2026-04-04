@@ -50,12 +50,13 @@
       "Bash(fastlane:*)",
       "Bash(brew:*)",
       "mcp__notion_*",
-      "mcp__claude_ai_Notion*",
-      "mcp__plugin_figma*",
+      "mcp__claude_ai_Notion__*",
+      "mcp__plugin_figma_figma__*",
       "Bash(python3:*)",
       "Bash(/workspace/.venv/bin/python -m pytest:*)",
       "WebFetch(domain:api.github.com)",
-      "WebFetch(domain:dribbble.com)"
+      "WebFetch(domain:dribbble.com)",
+      "Bash(xcodegen generate:*)"
     ],
     "deny": [
       "Bash(rm -rf /)",
@@ -89,8 +90,8 @@
       "Read(./**/fastlane/.env*)"
     ]
   },
+  "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "notion"
-  ],
-  "enableAllProjectMcpServers": true
+  ]
 }
