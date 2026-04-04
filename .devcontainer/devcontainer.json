@@ -1,0 +1,52 @@
+{
+	"name": "Python 3",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"hostRequirements": {
+    	"memory": "4gb"
+  	},
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {
+		"installZsh": false,
+		"installOhMyZsh": false,
+		"username": "vscode"
+		}
+	},
+	"mounts": [
+		"source=claude-code-bashhistory-${devcontainerId},target=/commandhistory,type=volume",
+		"source=claude-code-config-${devcontainerId},target=/home/vscode/.claude,type=volume"
+	],
+	"remoteEnv": {
+		// ホストの環境変数を参照
+		"NOTION_TOKEN": "${localEnv:NOTION_TOKEN}",
+		"GITHUB_PERSONAL_ACCESS_TOKEN": "${localEnv:GITHUB_PERSONAL_ACCESS_TOKEN}",
+		"OPENAI_API_KEY": "${localEnv:OPENAI_API_KEY}"
+	},
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"chat.disableAIFeatures": true
+			},
+			"extensions": [
+				"streetsidesoftware.code-spell-checker",
+				"anthropic.claude-code"
+			]
+		}
+	},
+	"forwardPorts": [9000],
+	"portsAttributes": {
+		"9000": {
+			"label": "Hello Remote World",
+			"onAutoForward": "notify"
+		}
+	},
+	"otherPortsAttributes": {
+		"onAutoForward": "openBrowser"
+	},
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=delegated",
+	"workspaceFolder": "/workspace",
+	"postCreateCommand": "bash ${containerWorkspaceFolder}/.devcontainer/scripts/setup.sh",
+	"waitFor": "postCreateCommand"
+
+}
