@@ -21,6 +21,8 @@ targets:
     dependencies:
       - target: ShareExtension
         embed: true
+      - target: ActionExtension
+        embed: true
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.egoshi.ArticleFlash
@@ -57,6 +59,28 @@ targets:
         SWIFT_EMIT_LOC_STRINGS: YES
     entitlements:
       path: ShareExtension/ShareExtension.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.egoshi.ArticleFlash
+
+  ActionExtension:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: ActionExtension
+      - path: ShareExtension/ShareExtensionView.swift
+      - path: ArticleFlash/Core
+      - path: ArticleFlash/Views/Components
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.egoshi.ArticleFlash.ActionExtension
+        INFOPLIST_KEY_CFBundleDisplayName: カード作成
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: ActionExtension/Info.plist
+        CODE_SIGN_ENTITLEMENTS: ActionExtension/ActionExtension.entitlements
+        SWIFT_EMIT_LOC_STRINGS: YES
+    entitlements:
+      path: ActionExtension/ActionExtension.entitlements
       properties:
         com.apple.security.application-groups:
           - group.com.egoshi.ArticleFlash

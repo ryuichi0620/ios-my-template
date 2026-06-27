@@ -6,6 +6,8 @@ struct ReviewView: View {
     @Environment(\.modelContext) private var modelContext
     let cards: [Flashcard]
 
+    // カードのスナップショット（セッション中に配列が変わらないように）
+    @State private var sessionCards: [Flashcard] = []
     @State private var currentIndex = 0
     @State private var userAnswer = ""
     @State private var judgeResult: JudgeResult?
@@ -15,8 +17,8 @@ struct ReviewView: View {
     @State private var showCompletion = false
 
     private var currentCard: Flashcard? {
-        guard currentIndex < cards.count else { return nil }
-        return cards[currentIndex]
+        guard currentIndex < sessionCards.count else { return nil }
+        return sessionCards[currentIndex]
     }
 
     var body: some View {
@@ -44,13 +46,18 @@ struct ReviewView: View {
                 }
                 ToolbarItem(placement: .topBarTrailing) {
                     if !showCompletion {
-                        Text("\(currentIndex + 1)/\(cards.count)")
+                        Text("\(currentIndex + 1)/\(sessionCards.count)")
                             .font(.subheadline)
                             .foregroundStyle(.secondary)
                     }
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
+            .onAppear {
+                if sessionCards.isEmpty {
+                    sessionCards = cards
+                }
+            }
         }
     }
 
@@ -58,7 +65,7 @@ struct ReviewView: View {
 
     private var progressIndicator: some View {
         HStack(spacing: 6) {
-            ForEach(0..<cards.count, id: \.self) { index in
+            ForEach(0..<sessionCards.count, id: \.self) { index in
                 if index == currentIndex {
                     Capsule()
                         .fill(AppTheme.accent)
@@ -186,7 +193,7 @@ struct ReviewView: View {
             Button {
                 moveToNext()
             } label: {
-                Text(currentIndex < cards.count - 1 ? "次のカード →" : "結果を見る")
+                Text(currentIndex < sessionCards.count - 1 ? "次のカード →" : "結果を見る")
                     .font(.headline)
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 16)
@@ -216,7 +223,7 @@ struct ReviewView: View {
                     .font(.title)
                     .fontWeight(.bold)
 
-                Text("\(correctCount) / \(cards.count) 正解")
+                Text("\(correctCount) / \(sessionCards.count) 正解")
                     .font(.headline)
 
                 HStack(spacing: 4) {
@@ -284,7 +291,7 @@ struct ReviewView: View {
     }
 
     private func moveToNext() {
-        if currentIndex < cards.count - 1 {
+        if currentIndex < sessionCards.count - 1 {
             currentIndex += 1
             userAnswer = ""
             judgeResult = nil

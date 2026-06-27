@@ -4,13 +4,13 @@ import FoundationModels
 
 @Generable
 struct FlashcardCandidate: Sendable {
-    @Guide(description: "記事の核心を1文で問う質問。答えを知らない人が読んで意味が分かるもの")
+    @Guide(description: "記事の核心を問う具体的な質問。自己完結した1文")
     var question: String
 
-    @Guide(description: "30文字以内の簡潔な答え。キーワードが明確に含まれるもの")
+    @Guide(description: "30字以内の答え。キーワードを文頭に配置")
     var answer: String
 
-    @Guide(description: "関連キーワードを1〜3個")
+    @Guide(description: "関連する技術名やカテゴリを1〜3個")
     var tags: [String]
 }
 

@@ -10,27 +10,43 @@
 		05A4F20EB9AB40CA8EC519DD /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E76861C80F076F639BB737C /* ReviewView.swift */; };
 		082604FE76AAD6C3E9084849 /* FlashcardCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8E95D588729092D0793CBE /* FlashcardCardView.swift */; };
 		0BF3A94B6F0C1AD113CEB8FC /* FlashcardGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DDEB4AEAC199D86AF19D3B /* FlashcardGenerator.swift */; };
+		10B2654E37D06B242E38D162 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7009907F6042435086E1F104 /* Theme.swift */; };
+		10F0DF552218A729414E8F47 /* ReviewSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FF66886987C160945D7AC /* ReviewSession.swift */; };
+		1852BEFDA8594241717B350A /* FlashcardGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DDEB4AEAC199D86AF19D3B /* FlashcardGenerator.swift */; };
 		19559BD45F5E0572787D5D19 /* ReviewSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FF66886987C160945D7AC /* ReviewSession.swift */; };
 		19F1EFA01EAD8535F36D69B4 /* ReviewJudge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394A260EF27CAC21B1D6A5E3 /* ReviewJudge.swift */; };
+		254E7C9AE14312522C70B82D /* ActionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 159AD521E3BABB395BEF509C /* ActionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		26B49715DC2EE6844666C0B1 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF099AF8A5C616CD602348E /* ActionViewController.swift */; };
 		318A7CF95F1378D7F82AAC8F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7009907F6042435086E1F104 /* Theme.swift */; };
 		32A38052B341E19EDE324860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5856F060D944B184FD3D1050 /* Assets.xcassets */; };
 		3A8EE4699DE97943BC56FA99 /* ArticleExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004B477144A7F4399ADBD849 /* ArticleExtractor.swift */; };
+		45CF44F540E844B0B9D366A7 /* ShareExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D113BA970D6CB4DD262B9393 /* ShareExtensionView.swift */; };
 		4D3C46719D405C16BE9B32F9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F915BD12D57ED76FB9D7D4 /* SettingsView.swift */; };
 		4E05AFE12496ABB23FD89999 /* ShareExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D113BA970D6CB4DD262B9393 /* ShareExtensionView.swift */; };
 		539767AF9FA7F967AEC4B968 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9546807BF44D01D1D080D0 /* NotificationService.swift */; };
+		58790BE425FBEFABC1BD41B2 /* ArticleSummarizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BB6D10BBF5DE5EBFFF97D1 /* ArticleSummarizer.swift */; };
+		597FCAAFB064D0DCE42208BE /* ArticleSummarizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BB6D10BBF5DE5EBFFF97D1 /* ArticleSummarizer.swift */; };
 		6165982E2B7655ECFC7691DF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75808DD6CFBC4B5EEED662A1 /* HomeView.swift */; };
 		669B065E44739AB06B75F75B /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7010D824CB4788D4557B119 /* Flashcard.swift */; };
 		6934D378FB6EB9A8C0BDB588 /* NotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E67D8A06DC8D64839F84D3 /* NotionService.swift */; };
+		6EC1573AC7EBA30F1A927953 /* ArticleSummarizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BB6D10BBF5DE5EBFFF97D1 /* ArticleSummarizer.swift */; };
 		71BD43A1303C9E7D4DCC2171 /* WeeklyQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0ED644F8B160D225FAB50E /* WeeklyQuizView.swift */; };
 		7258256A953EDB6F226A6716 /* ArticleFlashApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D10672F3BEE46EAAAF28385 /* ArticleFlashApp.swift */; };
 		77273456ADB4D2F024FCBC09 /* ReviewJudge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394A260EF27CAC21B1D6A5E3 /* ReviewJudge.swift */; };
+		79BFB3F3DA25EB8C237E5B78 /* ArticleExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004B477144A7F4399ADBD849 /* ArticleExtractor.swift */; };
 		7C641451B4E65142689A9FCF /* ShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9D42DAEC0AE7A355279DBCDF /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7CC6BAE68DF136F5CE4F5A8F /* ArticleContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77125B2EE74228F88A17CBE2 /* ArticleContent.swift */; };
 		80B7BB2D32D7A2DE4D24EBBE /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4DD92A23513594ABB0D6EC /* SharedStore.swift */; };
+		876961FF68985581039D0723 /* FlashcardCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8E95D588729092D0793CBE /* FlashcardCardView.swift */; };
 		8EEBB4D7DC2B18695EAFC26D /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7010D824CB4788D4557B119 /* Flashcard.swift */; };
 		94567C55AEB41A6F2A483624 /* ArticleContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77125B2EE74228F88A17CBE2 /* ArticleContent.swift */; };
 		968DE7722F0D4AB194C7B602 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC9816D339BDCCFCE9545A /* ShareViewController.swift */; };
 		A12A388DB88CB36259D5537E /* FlashcardGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DDEB4AEAC199D86AF19D3B /* FlashcardGenerator.swift */; };
 		A362EA7B7D12B3E063963020 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FF268D83FC96B50FAF3495 /* ContentView.swift */; };
+		A830FDBFBF840454D316A451 /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4DD92A23513594ABB0D6EC /* SharedStore.swift */; };
+		B3CDFEDC65EC5738495E3B11 /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7010D824CB4788D4557B119 /* Flashcard.swift */; };
+		B7C5FCB5698A5BB19AD84337 /* NotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E67D8A06DC8D64839F84D3 /* NotionService.swift */; };
+		D023885164064ACA5D07B792 /* ReviewJudge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394A260EF27CAC21B1D6A5E3 /* ReviewJudge.swift */; };
 		D8793D69F1751C0E9BF235E0 /* PreviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843A66D84A06A514BBE3601F /* PreviewHelper.swift */; };
 		DA20D4C9BE9D4AC194B1BA1E /* ArticleExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004B477144A7F4399ADBD849 /* ArticleExtractor.swift */; };
 		F08F1E2068F50D97DCFCE527 /* ReviewSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FF66886987C160945D7AC /* ReviewSession.swift */; };
@@ -39,6 +55,7 @@
 		F52DF56B981FE6AC25ABBDC0 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9546807BF44D01D1D080D0 /* NotificationService.swift */; };
 		F6CAAC1FE53FC7F548ADD7EE /* FlashcardCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8E95D588729092D0793CBE /* FlashcardCardView.swift */; };
 		F98B47EFE16056664E1FAE5B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7009907F6042435086E1F104 /* Theme.swift */; };
+		FA635BF10E1E9DEC21E4DAA6 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9546807BF44D01D1D080D0 /* NotificationService.swift */; };
 		FAE63DC8851E9858EAE5C2A1 /* ArticleContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77125B2EE74228F88A17CBE2 /* ArticleContent.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +67,13 @@
 			remoteGlobalIDString = ACC5E1DF78A11BA8E6AA138F;
 			remoteInfo = ShareExtension;
 		};
+		9BA0534282266FEA958B9C8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8688FCCF4D4450D1C424343 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DD8019B8572720E13885BB5;
+			remoteInfo = ActionExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,6 +84,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				7C641451B4E65142689A9FCF /* ShareExtension.appex in Embed Foundation Extensions */,
+				254E7C9AE14312522C70B82D /* ActionExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,11 +94,14 @@
 /* Begin PBXFileReference section */
 		004B477144A7F4399ADBD849 /* ArticleExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleExtractor.swift; sourceTree = "<group>"; };
 		06DDEB4AEAC199D86AF19D3B /* FlashcardGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardGenerator.swift; sourceTree = "<group>"; };
+		089177F61184133142C5E6A7 /* ActionExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ActionExtension.entitlements; sourceTree = "<group>"; };
 		0B9546807BF44D01D1D080D0 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		10E67D8A06DC8D64839F84D3 /* NotionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotionService.swift; sourceTree = "<group>"; };
+		159AD521E3BABB395BEF509C /* ActionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ActionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D10672F3BEE46EAAAF28385 /* ArticleFlashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleFlashApp.swift; sourceTree = "<group>"; };
 		2A0ED644F8B160D225FAB50E /* WeeklyQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyQuizView.swift; sourceTree = "<group>"; };
 		2A8E95D588729092D0793CBE /* FlashcardCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardCardView.swift; sourceTree = "<group>"; };
+		35BB6D10BBF5DE5EBFFF97D1 /* ArticleSummarizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleSummarizer.swift; sourceTree = "<group>"; };
 		35F915BD12D57ED76FB9D7D4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		394A260EF27CAC21B1D6A5E3 /* ReviewJudge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewJudge.swift; sourceTree = "<group>"; };
 		429FF66886987C160945D7AC /* ReviewSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewSession.swift; sourceTree = "<group>"; };
@@ -87,10 +115,12 @@
 		8E76861C80F076F639BB737C /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 		97BC9816D339BDCCFCE9545A /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		9D42DAEC0AE7A355279DBCDF /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FF099AF8A5C616CD602348E /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		A85A27582A0438D2D4DB77C8 /* ArticleFlash.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ArticleFlash.entitlements; sourceTree = "<group>"; };
 		B0CA1BDBD78F580C7475D768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C723A54F7EEBAFEADE215DE5 /* ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareExtension.entitlements; sourceTree = "<group>"; };
 		D113BA970D6CB4DD262B9393 /* ShareExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareExtensionView.swift; sourceTree = "<group>"; };
+		E055B332F756B7B50C3CFC9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E1FF268D83FC96B50FAF3495 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E7010D824CB4788D4557B119 /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,7 +154,6 @@
 				1D10672F3BEE46EAAAF28385 /* ArticleFlashApp.swift */,
 				5856F060D944B184FD3D1050 /* Assets.xcassets */,
 				E1FF268D83FC96B50FAF3495 /* ContentView.swift */,
-				F11549520DC7CBC72B236105 /* Core */,
 				4ACC81C2A05DF2BBAAC12569 /* Views */,
 			);
 			path = ArticleFlash;
@@ -138,7 +167,6 @@
 				8E76861C80F076F639BB737C /* ReviewView.swift */,
 				35F915BD12D57ED76FB9D7D4 /* SettingsView.swift */,
 				2A0ED644F8B160D225FAB50E /* WeeklyQuizView.swift */,
-				C5402F32D5544A34EA3D5D28 /* Components */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -146,7 +174,10 @@
 		4F3FA580E3122D8A661FD98F = {
 			isa = PBXGroup;
 			children = (
+				F78F0D603B50BF25F5709D70 /* ActionExtension */,
 				3A9497F0864AD71B8810A4DD /* ArticleFlash */,
+				C5402F32D5544A34EA3D5D28 /* Components */,
+				F11549520DC7CBC72B236105 /* Core */,
 				0199446C3C36EB3690CF745C /* ShareExtension */,
 				BBD285D394C34F3EF15DAA57 /* Products */,
 			);
@@ -156,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				004B477144A7F4399ADBD849 /* ArticleExtractor.swift */,
+				35BB6D10BBF5DE5EBFFF97D1 /* ArticleSummarizer.swift */,
 				06DDEB4AEAC199D86AF19D3B /* FlashcardGenerator.swift */,
 				0B9546807BF44D01D1D080D0 /* NotificationService.swift */,
 				10E67D8A06DC8D64839F84D3 /* NotionService.swift */,
@@ -168,6 +200,7 @@
 		BBD285D394C34F3EF15DAA57 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				159AD521E3BABB395BEF509C /* ActionExtension.appex */,
 				8AA0394684B9C0E639C5251D /* ArticleFlash.app */,
 				9D42DAEC0AE7A355279DBCDF /* ShareExtension.appex */,
 			);
@@ -180,7 +213,8 @@
 				2A8E95D588729092D0793CBE /* FlashcardCardView.swift */,
 				7009907F6042435086E1F104 /* Theme.swift */,
 			);
-			path = Components;
+			name = Components;
+			path = ArticleFlash/Views/Components;
 			sourceTree = "<group>";
 		};
 		F11549520DC7CBC72B236105 /* Core */ = {
@@ -189,7 +223,18 @@
 				317A53BFEACE3A0B86DBFAAB /* Models */,
 				B48BD507C72F0A25229D6520 /* Services */,
 			);
-			path = Core;
+			name = Core;
+			path = ArticleFlash/Core;
+			sourceTree = "<group>";
+		};
+		F78F0D603B50BF25F5709D70 /* ActionExtension */ = {
+			isa = PBXGroup;
+			children = (
+				089177F61184133142C5E6A7 /* ActionExtension.entitlements */,
+				9FF099AF8A5C616CD602348E /* ActionViewController.swift */,
+				E055B332F756B7B50C3CFC9A /* Info.plist */,
+			);
+			path = ActionExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +252,7 @@
 			);
 			dependencies = (
 				988ED39CA98B6603A22D47FA /* PBXTargetDependency */,
+				BC16B3E6C50131E6CBD3BCBA /* PBXTargetDependency */,
 			);
 			name = ArticleFlash;
 			packageProductDependencies = (
@@ -214,6 +260,23 @@
 			productName = ArticleFlash;
 			productReference = 8AA0394684B9C0E639C5251D /* ArticleFlash.app */;
 			productType = "com.apple.product-type.application";
+		};
+		6DD8019B8572720E13885BB5 /* ActionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A240098DC848B972D3D17F79 /* Build configuration list for PBXNativeTarget "ActionExtension" */;
+			buildPhases = (
+				3E06DFC8497D45E228CE0EA1 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ActionExtension;
+			packageProductDependencies = (
+			);
+			productName = ActionExtension;
+			productReference = 159AD521E3BABB395BEF509C /* ActionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 		ACC5E1DF78A11BA8E6AA138F /* ShareExtension */ = {
 			isa = PBXNativeTarget;
@@ -254,6 +317,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				6DD8019B8572720E13885BB5 /* ActionExtension */,
 				0A2650D4160DC2797104095A /* ArticleFlash */,
 				ACC5E1DF78A11BA8E6AA138F /* ShareExtension */,
 			);
@@ -279,6 +343,7 @@
 				94567C55AEB41A6F2A483624 /* ArticleContent.swift in Sources */,
 				DA20D4C9BE9D4AC194B1BA1E /* ArticleExtractor.swift in Sources */,
 				7258256A953EDB6F226A6716 /* ArticleFlashApp.swift in Sources */,
+				58790BE425FBEFABC1BD41B2 /* ArticleSummarizer.swift in Sources */,
 				A362EA7B7D12B3E063963020 /* ContentView.swift in Sources */,
 				669B065E44739AB06B75F75B /* Flashcard.swift in Sources */,
 				082604FE76AAD6C3E9084849 /* FlashcardCardView.swift in Sources */,
@@ -297,12 +362,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3E06DFC8497D45E228CE0EA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26B49715DC2EE6844666C0B1 /* ActionViewController.swift in Sources */,
+				7CC6BAE68DF136F5CE4F5A8F /* ArticleContent.swift in Sources */,
+				79BFB3F3DA25EB8C237E5B78 /* ArticleExtractor.swift in Sources */,
+				6EC1573AC7EBA30F1A927953 /* ArticleSummarizer.swift in Sources */,
+				B3CDFEDC65EC5738495E3B11 /* Flashcard.swift in Sources */,
+				876961FF68985581039D0723 /* FlashcardCardView.swift in Sources */,
+				1852BEFDA8594241717B350A /* FlashcardGenerator.swift in Sources */,
+				FA635BF10E1E9DEC21E4DAA6 /* NotificationService.swift in Sources */,
+				B7C5FCB5698A5BB19AD84337 /* NotionService.swift in Sources */,
+				D023885164064ACA5D07B792 /* ReviewJudge.swift in Sources */,
+				10F0DF552218A729414E8F47 /* ReviewSession.swift in Sources */,
+				45CF44F540E844B0B9D366A7 /* ShareExtensionView.swift in Sources */,
+				A830FDBFBF840454D316A451 /* SharedStore.swift in Sources */,
+				10B2654E37D06B242E38D162 /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		587F33CF3D82CF53DDD293E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FAE63DC8851E9858EAE5C2A1 /* ArticleContent.swift in Sources */,
 				3A8EE4699DE97943BC56FA99 /* ArticleExtractor.swift in Sources */,
+				597FCAAFB064D0DCE42208BE /* ArticleSummarizer.swift in Sources */,
 				8EEBB4D7DC2B18695EAFC26D /* Flashcard.swift in Sources */,
 				F6CAAC1FE53FC7F548ADD7EE /* FlashcardCardView.swift in Sources */,
 				0BF3A94B6F0C1AD113CEB8FC /* FlashcardGenerator.swift in Sources */,
@@ -325,9 +412,34 @@
 			target = ACC5E1DF78A11BA8E6AA138F /* ShareExtension */;
 			targetProxy = 26C75C37F034E5A7D1990746 /* PBXContainerItemProxy */;
 		};
+		BC16B3E6C50131E6CBD3BCBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DD8019B8572720E13885BB5 /* ActionExtension */;
+			targetProxy = 9BA0534282266FEA958B9C8E /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		34D22E1DA76811DD07DF0E6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ActionExtension/ActionExtension.entitlements;
+				DEVELOPMENT_TEAM = 5JD92NU25P;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ActionExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "カード作成";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.egoshi.ArticleFlash.ActionExtension;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		379586544FD09EB26F92E28C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -410,6 +522,26 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 6.2;
+			};
+			name = Debug;
+		};
+		9CEF31B4EA7D68981C131269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ActionExtension/ActionExtension.entitlements;
+				DEVELOPMENT_TEAM = 5JD92NU25P;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ActionExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "カード作成";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.egoshi.ArticleFlash.ActionExtension;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -558,6 +690,15 @@
 			buildConfigurations = (
 				379586544FD09EB26F92E28C /* Debug */,
 				FE548EC15B5135D4DC953DFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A240098DC848B972D3D17F79 /* Build configuration list for PBXNativeTarget "ActionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CEF31B4EA7D68981C131269 /* Debug */,
+				34D22E1DA76811DD07DF0E6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

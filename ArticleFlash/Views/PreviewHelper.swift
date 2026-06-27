@@ -76,10 +76,10 @@ struct MockHomeEmptyView: View {
         VStack(spacing: 12) {
             Text("今日の復習はありません")
                 .font(.system(size: 20, weight: .bold))
-                .foregroundStyle(.white)
+                .foregroundStyle(AppTheme.onGradientText)
             Text("お疲れ様でした。\n明日も新しい記事を元に学習を続けましょう")
                 .font(.system(size: 14))
-                .foregroundStyle(.white)
+                .foregroundStyle(AppTheme.onGradientText)
                 .multilineTextAlignment(.center)
         }
         .frame(maxWidth: .infinity)
@@ -120,26 +120,26 @@ struct MockHomeActiveView: View {
             HStack {
                 Text("今日の復習")
                     .font(.system(size: 17, weight: .semibold))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(AppTheme.onGradientText)
                 Spacer()
                 Text("🔥 7日連続")
                     .font(.system(size: 12, weight: .medium))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(AppTheme.onGradientText)
                     .padding(.horizontal, 10).padding(.vertical, 4)
-                    .background(.white.opacity(0.2))
+                    .background(AppTheme.onGradientText.opacity(0.2))
                     .clipShape(Capsule())
             }
             Text("3枚")
                 .font(.system(size: 56, weight: .bold))
-                .foregroundStyle(.white)
+                .foregroundStyle(AppTheme.onGradientText)
             Text("未復習のカードがあります")
-                .font(.system(size: 14)).foregroundStyle(.white)
+                .font(.system(size: 14)).foregroundStyle(AppTheme.onGradientText)
             Spacer().frame(height: 4)
             Text("復習を始める →")
                 .font(.system(size: 17, weight: .semibold))
                 .foregroundStyle(AppTheme.brandPrimary)
                 .frame(maxWidth: .infinity).padding(.vertical, 14)
-                .background(.white)
+                .background(AppTheme.buttonOnGradient)
                 .clipShape(RoundedRectangle(cornerRadius: 16))
         }
         .padding(24)
@@ -384,7 +384,7 @@ struct MockBottomButton: View {
     var body: some View {
         Text(title)
             .font(.system(size: 17, weight: .semibold))
-            .foregroundStyle(.white)
+            .foregroundStyle(AppTheme.onGradientText)
             .frame(maxWidth: .infinity)
             .padding(.vertical, 16)
             .background(AppTheme.accent)
@@ -457,7 +457,7 @@ struct MockCalendarDay: View {
             ZStack {
                 RoundedRectangle(cornerRadius: 10).fill(fillColor).frame(width: 32, height: 32)
                 if count > 0 {
-                    Text("\(count)").font(.system(size: 12, weight: .semibold)).foregroundStyle(.white)
+                    Text("\(count)").font(.system(size: 12, weight: .semibold)).foregroundStyle(AppTheme.onGradientText)
                 }
             }
         }

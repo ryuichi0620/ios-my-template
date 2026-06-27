@@ -2,7 +2,7 @@ import UIKit
 import SwiftUI
 import UniformTypeIdentifiers
 
-class ShareViewController: UIViewController {
+class ActionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

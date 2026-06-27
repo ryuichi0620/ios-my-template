@@ -50,31 +50,29 @@ struct HomeView: View {
     }
 
     var body: some View {
-        NavigationStack {
-            ScrollView {
-                VStack(spacing: 20) {
-                    reviewCard
-                    weeklyLearning
-                    recentCards
-                }
-                .padding(.bottom, 20)
-            }
-            .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
+        ScrollView {
+            VStack(spacing: 20) {
+                // タイトル + XP
+                HStack {
                     Text("ArticleFlash")
                         .font(.system(size: 28, weight: .bold))
-                }
-                ToolbarItem(placement: .topBarTrailing) {
+                    Spacer()
                     xpBadge
                 }
+                .padding(.horizontal, 20)
+                .padding(.top, 8)
+
+                reviewCard
+                weeklyLearning
+                recentCards
             }
-            .navigationBarTitleDisplayMode(.inline)
-            .sheet(isPresented: $showingReview) {
-                ReviewView(cards: pendingReviewCards)
-            }
-            .sheet(isPresented: $showingSettings) {
-                SettingsView()
-            }
+            .padding(.bottom, 20)
+        }
+        .sheet(isPresented: $showingReview) {
+            ReviewView(cards: pendingReviewCards)
+        }
+        .sheet(isPresented: $showingSettings) {
+            SettingsView()
         }
     }
 
@@ -103,11 +101,11 @@ struct HomeView: View {
             VStack(spacing: 12) {
                 Text("今日の復習はありません")
                     .font(.system(size: 20, weight: .bold))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(AppTheme.onGradientText)
 
                 Text("お疲れ様でした。\n明日も新しい記事を元に学習を続けましょう")
                     .font(.system(size: 14))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(AppTheme.onGradientText)
                     .multilineTextAlignment(.center)
             }
             .frame(maxWidth: .infinity)
@@ -123,28 +121,28 @@ struct HomeView: View {
                 HStack {
                     Text("今日の復習")
                         .font(.system(size: 17, weight: .semibold))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(AppTheme.onGradientText)
 
                     Spacer()
 
                     if streakDays > 0 {
                         Text("🔥 \(streakDays)日連続")
                             .font(.system(size: 12, weight: .medium))
-                            .foregroundStyle(.white)
+                            .foregroundStyle(AppTheme.onGradientText)
                             .padding(.horizontal, 10)
                             .padding(.vertical, 4)
-                            .background(.white.opacity(0.2))
+                            .background(AppTheme.onGradientText.opacity(0.2))
                             .clipShape(Capsule())
                     }
                 }
 
                 Text("\(pendingReviewCards.count)枚")
                     .font(.system(size: 56, weight: .bold))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(AppTheme.onGradientText)
 
                 Text("未復習のカードがあります")
                     .font(.system(size: 14))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(AppTheme.onGradientText)
 
                 Spacer().frame(height: 4)
 
@@ -156,7 +154,7 @@ struct HomeView: View {
                         .foregroundStyle(AppTheme.brandPrimary)
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 14)
-                        .background(.white)
+                        .background(AppTheme.buttonOnGradient)
                         .clipShape(RoundedRectangle(cornerRadius: 16))
                 }
                 .buttonStyle(.plain)
@@ -214,7 +212,7 @@ struct HomeView: View {
                         if cardsOnDay > 0 {
                             Text("\(cardsOnDay)")
                                 .font(.system(size: 12, weight: .semibold))
-                                .foregroundStyle(.white)
+                                .foregroundStyle(AppTheme.onGradientText)
                         }
                     }
                 }

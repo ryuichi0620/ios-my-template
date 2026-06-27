@@ -3,26 +3,31 @@ import FoundationModels
 
 @Generable
 struct JudgeResult: Sendable {
-    @Guide(description: "ユーザーの回答が正解かどうか。意味的に同じなら正解とする")
+    @Guide(description: "正解ならtrue。キーワードや概念が含まれていれば表現違いでも正解")
     var isCorrect: Bool
 
-    @Guide(description: "判定の簡潔な理由（1文）")
+    @Guide(description: "判定理由を1文で具体的に")
     var reason: String
 }
 
 struct ReviewJudge {
+
+    private static let instructions = """
+    回答の正誤を判定。日本語で出力。
+    基準: キーワード・概念が含まれれば表現違いでも正解。部分的でも核心が欠ければ不正解。
+    例: 「ビュー内部所有」≒「ビュー自身が持つ」→正解 / 「4096」≒「約4000」→正解
+    """
+
     static func judge(
         question: String,
         correctAnswer: String,
         userAnswer: String
     ) async throws -> JudgeResult {
-        let session = LanguageModelSession(
-            instructions: """
-            あなたは学習カードの回答を判定する専門家です。
-            ユーザーの回答が模範解答と意味的に同じなら正解と判定してください。
-            完全一致は必要ありません。キーポイントが含まれていれば正解です。
-            """
-        )
+        guard SystemLanguageModel.default.isAvailable else {
+            return fallbackJudge(correctAnswer: correctAnswer, userAnswer: userAnswer)
+        }
+
+        let session = LanguageModelSession(instructions: instructions)
 
         let prompt = """
         質問: \(question)
@@ -37,5 +42,24 @@ struct ReviewJudge {
             generating: JudgeResult.self
         )
         return response.content
+    }
+
+    private static func fallbackJudge(correctAnswer: String, userAnswer: String) -> JudgeResult {
+        let normalizedAnswer = correctAnswer.lowercased()
+            .replacingOccurrences(of: " ", with: "")
+        let normalizedUser = userAnswer.lowercased()
+            .replacingOccurrences(of: " ", with: "")
+
+        let keywords = normalizedAnswer.components(separatedBy: CharacterSet.alphanumerics.inverted)
+            .filter { $0.count >= 2 }
+        let matchCount = keywords.filter { normalizedUser.contains($0) }.count
+        let matchRatio = keywords.isEmpty ? 0.0 : Double(matchCount) / Double(keywords.count)
+
+        let isCorrect = matchRatio >= 0.4 || normalizedUser.contains(normalizedAnswer) || normalizedAnswer.contains(normalizedUser)
+
+        return JudgeResult(
+            isCorrect: isCorrect,
+            reason: isCorrect ? "キーワードが一致" : "主要なキーワードが不足"
+        )
     }
 }
